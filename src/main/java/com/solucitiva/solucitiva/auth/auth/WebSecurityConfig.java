@@ -13,6 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
+    //TODO converter de inMemory para persistencia em banco
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
